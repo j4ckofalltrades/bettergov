@@ -95,3 +95,9 @@ jobs:
           node scripts/validate-json-schema.js \
             src/data/services/schema/services.schema.json \
             "src/data/services/*.json"
+
+      - name: Validate flood control JSON file
+        run: |
+          node scripts/validate-json-schema.js \
+            src/data/flood_control/schema/flood_control.schema.json \
+            src/data/flood_control/flood_control.json
