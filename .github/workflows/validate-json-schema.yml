@@ -137,6 +137,11 @@ jobs:
           node scripts/validate-json-schema.js \
             src/data/schema/websites.schema.json \
             src/data/websites.json
+      - name: Validate flood control JSON file
+        run: |
+          node scripts/validate-json-schema.js \
+            src/data/flood_control/schema/flood_control.schema.json \
+            src/data/flood_control/flood_control.json
       - name: Validate visa policy JSON file
         run: |
           node scripts/validate-json-schema.js \
